@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرم ثبت‌ نام</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #007bff, #6610f2);
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: #000; /* متن داخل فرم */
+        }
+        .form-container h3 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h3 class="text-center mb-4">فرم ثبت‌ نام</h3>
+        <form id="registrationForm">
+            <div class="mb-3">
+                <label for="username" class="form-label">نام کاربری</label>
+                <input type="text" class="form-control" id="username" placeholder="نام کاربری خود را وارد کنید">
+                <div class="invalid-feedback">نام کاربری نمی‌تواند خالی باشد.</div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">ایمیل</label>
+                <input type="email" class="form-control" id="email" placeholder="ایمیل خود را وارد کنید">
+                <div class="invalid-feedback">ایمیل وارد شده نامعتبر است.</div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">رمز عبور</label>
+                <input type="password" class="form-control" id="password" placeholder="رمز عبور خود را وارد کنید">
+                <div class="invalid-feedback">رمز عبور باید حداقل ۶ کاراکتر باشد.</div>
+            </div>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">تأیید رمز عبور</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="رمز عبور را مجدداً وارد کنید">
+                <div class="invalid-feedback">رمز عبور و تأیید آن مطابقت ندارند.</div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">ثبت‌نام</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
